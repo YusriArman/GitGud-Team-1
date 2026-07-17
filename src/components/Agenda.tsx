@@ -90,7 +90,6 @@ function TimelineDot({ status }: TimelineDotProps) {
     return (
       <span className="relative flex items-center justify-center w-10 h-10 shrink-0 z-10">
         <span className="inline-flex w-5 h-5 rounded-full bg-brand/30 border-2 border-brand items-center justify-center">
-          {/* check mark */}
           <svg
             className="w-3 h-3 text-brand"
             viewBox="0 0 12 12"
@@ -242,7 +241,6 @@ function AgendaCard({ item, isExpanded, onToggle, isLast }: AgendaCardProps) {
 
 export default function Agenda() {
   const [expandedId, setExpandedId] = useState<number | null>(
-    // Default: open the current session
     AGENDA_ITEMS.find((i) => i.status === "current")?.id ?? null
   );
 
